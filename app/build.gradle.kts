@@ -52,6 +52,8 @@ dependencies {
     implementation(libs.navigation.fragment)
     implementation(libs.navigation.ui)
 
+    // di
+
     // Tests
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
