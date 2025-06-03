@@ -49,6 +49,8 @@ dependencies {
 
     // Logging Interceptor
     implementation("com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.11")
+    implementation(libs.navigation.fragment)
+    implementation(libs.navigation.ui)
 
     // Tests
     testImplementation(libs.junit)
