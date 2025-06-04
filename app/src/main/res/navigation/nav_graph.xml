@@ -1,6 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/nav_graph.xml">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/authFragment">
 
+    <!-- Ecran d'authentification -->
+    <fragment
+        android:id="@+id/authFragment"
+        android:name="com.example.mvvmconcept.auth.AuthFragment"
+        android:label="Authentification"
+        tools:layout="@layout/fragment_auth" >
+        <action
+            android:id="@+id/action_authFragment_to_taskListFragment"
+            app:destination="@id/taskListFragment"
+            app:popUpTo="@id/authFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <!-- Liste des tâches -->
+    <fragment
+        android:id="@+id/taskListFragment"
+        android:name="com.example.mvvmconcept.task.list.TaskListFragment"
+        android:label="Liste des tâches"
+        tools:layout="@layout/fragment_task_list" >
+        <action
+            android:id="@+id/action_taskListFragment_to_taskDetailFragment"
+            app:destination="@id/taskDetailFragment" />
+        <action
+            android:id="@+id/action_taskListFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+
+    <!-- Détail d'une tâche -->
+    <fragment
+        android:id="@+id/taskDetailFragment"
+        android:name="com.example.mvvmconcept.task.detail.TaskDetailFragment"
+        android:label="Détail tâche"
+        tools:layout="@layout/fragment_task_detail" >
+        <argument
+            android:name="taskId"
+            app:argType="integer"
+            android:defaultValue="-1" />
+    </fragment>
+
+    <!-- Paramètres -->
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.mvvmconcept.settings.SettingsFragment"
+        android:label="Paramètres"
+        tools:layout="@layout/fragment_settings" />
 </navigation>

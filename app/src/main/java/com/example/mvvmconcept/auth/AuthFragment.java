@@ -38,11 +38,11 @@ public class AuthFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        usernameEditText = view.findViewById(R.id.editTextUsername);
-        passwordEditText = view.findViewById(R.id.editTextPassword);
-        loginButton = view.findViewById(R.id.buttonLogin);
-        progressBar = view.findViewById(R.id.progressBar);
-        errorTextView = view.findViewById(R.id.textViewError);
+        usernameEditText = view.findViewById(R.id.et_email);
+        passwordEditText = view.findViewById(R.id.et_password);
+        loginButton = view.findViewById(R.id.btn_login);
+        progressBar = view.findViewById(R.id.progress_bar);
+        errorTextView = view.findViewById(R.id.tv_error);
 
         authViewModel = new ViewModelProvider(this).get(AuthViewModel.class);
 

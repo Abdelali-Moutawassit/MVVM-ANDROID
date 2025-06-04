@@ -39,7 +39,7 @@ public class TaskListFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         progressBar = view.findViewById(R.id.progressBar);
-        errorTextView = view.findViewById(R.id.textViewError);
+        errorTextView = view.findViewById(R.id.tv_empty_list);
         recyclerView = view.findViewById(R.id.recyclerViewTasks);
 
         adapter = new TaskListAdapter();

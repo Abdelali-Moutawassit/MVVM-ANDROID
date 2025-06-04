@@ -35,4 +35,12 @@ public class RetrofitInstance {
         }
         return apiService;
     }
+
+    public static Retrofit getRetrofitInstance() {
+        if (retrofit == null) {
+            throw new IllegalStateException("RetrofitInstance is not initialized. Call init() first.");
+        }
+        return retrofit;
+    }
+
 }

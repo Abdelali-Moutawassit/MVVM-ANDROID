@@ -33,9 +33,9 @@ public class SettingsFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        notificationsSwitch = view.findViewById(R.id.switchNotifications);
-        darkModeSwitch = view.findViewById(R.id.switchDarkMode);
-        titleText = view.findViewById(R.id.textViewSettingsTitle);
+        notificationsSwitch = view.findViewById(R.id.switch_notifications);
+        darkModeSwitch = view.findViewById(R.id.switch_dark_mode);
+        titleText = view.findViewById(R.id.tv_settings_title);
 
         viewModel = new ViewModelProvider(this).get(SettingsViewModel.class);
 
