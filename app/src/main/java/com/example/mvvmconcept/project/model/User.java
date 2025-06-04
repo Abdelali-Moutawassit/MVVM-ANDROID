@@ -1,10 +1,10 @@
 package com.example.mvvmconcept.project.model;
 
-public class user {
+public class User {
     private String name;
     private String email;
 
-    public user(String name, String email) {
+    public User(String name, String email) {
         this.name = name;
         this.email = email;
     }

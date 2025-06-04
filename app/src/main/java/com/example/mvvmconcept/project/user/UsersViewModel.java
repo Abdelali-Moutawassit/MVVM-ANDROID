@@ -4,11 +4,9 @@ import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-import com.example.mvvmconcept.model.User;
+import com.example.mvvmconcept.project.model.User;
 import com.example.mvvmconcept.project.net.ApiClient;
 import com.example.mvvmconcept.project.net.ApiService;
-import com.example.mvvmconcept.task.list.TaskListUiState;
-
 import java.util.List;
 
 import retrofit2.Call;

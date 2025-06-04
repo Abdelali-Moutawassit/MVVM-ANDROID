@@ -17,8 +17,6 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.example.mvvmconcept.R;
-import com.example.mvvmconcept.task.list.TaskListAdapter;
-import com.example.mvvmconcept.task.list.TaskListViewModel;
 
 /**
  * A simple {@link Fragment} subclass.

@@ -11,8 +11,6 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.example.mvvmconcept.project.user.UsersFragment;
-import com.example.mvvmconcept.test.FragmentA;
-import com.example.mvvmconcept.test.FragmentB;
 
 public class MainActivity extends AppCompatActivity {
 

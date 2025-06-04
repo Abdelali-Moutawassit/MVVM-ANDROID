@@ -1,7 +1,8 @@
 package com.example.mvvmconcept.project.net;
 
 
-import com.example.mvvmconcept.model.User;
+
+import com.example.mvvmconcept.project.model.User;
 
 import java.util.List;
 
